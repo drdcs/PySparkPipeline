@@ -29,3 +29,5 @@
 
 ```
 Once the task is over move the python and config files to the cluster environment.
+
+<font color="blue"> spark-submit data_pipeline.py </font><br> </br>
