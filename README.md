@@ -28,7 +28,7 @@ According to the recommendations which we discussed above:
 * Leaving 1 executor for ApplicationManager => --num-executors = 29
 * Number of executors per node = 30/10 = 3
 * Memory per executor = 64GB/3 = 21GB
-* Counting off heap overhead = 7% of 21GB = 3GB. So, actual --executor-memory = 21 - 3 = 18GB
+* Counting off heap overhead = 7% of 21GB = 3GB. So, actual --executor-memory = 21 - 3 = 18GB => The overhead memory is being used by non jvm process or container process )
 * So, recommended config is: 29 executors, 18GB memory each and 5 cores each!!
 
 * **Analysis**: It is obvious as to how this third approach has found right balance between Fat vs Tiny approaches. 
